@@ -54,3 +54,25 @@ nav {
   height: 100%;
   z-index: -1;
 }
+
+.intro-social {
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+  }
+}
+
+.active {
+  background: $gray-text;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+}
+
+.intro-text,
+intro-images {
+  flex: 1 1 40rem;
+}
+
+@keyframes plant {
+}
