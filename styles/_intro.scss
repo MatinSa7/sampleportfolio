@@ -74,5 +74,48 @@ intro-images {
   flex: 1 1 40rem;
 }
 
+#plant-left {
+  animation: plant 2s ease-in-out infinite alternate-reverse;
+}
+
+#plant-right {
+  animation: plant 2s ease-in-out infinite alternate-reverse 0.5s;
+}
+
+#me {
+  transform-origin: bottom;
+  animation: me 3s ease-in-out infinite alternate;
+}
+
+#clock-arrow {
+  animation: clock 3s infinite linear;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
 @keyframes plant {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
