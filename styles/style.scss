@@ -8,10 +8,11 @@ $background-color: #154353;
 $gray-text: #2c2c2c;
 
 @mixin flex($justify, $align, $direction) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
 
 @import "global";
+@import "intro";
